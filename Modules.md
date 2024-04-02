@@ -83,3 +83,9 @@ So they are a newer version of module packages that it are recommended to use.
 ### Regular packages
 
 The classical Python packages are distinguished from the namespace ones because of the presence of an ``__init__.py`` file inside them. As mentioned previously, this file can be useful to configure specific settings of a module that will alter how the module ``sys`` imports the other ones. For compatibility with older versions, it is recommended.
+
+## Warning when importing names from module files
+
+If you are importing function, classes, variables or any name from two or more name modules within the same package, be careful with the names you set to each of the imported names in the active script, because it could cause a logic error: 
+
+Suppose you have a class named ``Customer`` in all of your files, with different definition on each. If you import that class from multiple file modules, Python will only choose one definition of the class for the entire script, unless you change the package (apparently, either the order of creation or the last update to a file's name is upon what Python defines the name-search hierarchy) or use the keyword **``as``** to define a different name in each of the modules imported (yes! You can use ``as`` for any name, including classes, functions or variables imported.)
