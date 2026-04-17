@@ -180,6 +180,16 @@ Al ejecutar script.py directamente, verás el mensaje de funcion_principal. Pero
 
 **Utilidad:** Esta característica permite que un módulo ejecute algún código de inicialización (como probar funciones o clases) solo cuando se está ejecutando como el programa principal. Esto evita que el código de prueba o inicialización se ejecute cuando el módulo se importa en otro script.
 
+----
+
+### Info adicional
+
+-[Python if __name__ == '__main__': Visually Explained](https://www.youtube.com/watch?v=KZpYtNtGxSU)
+
+-[Python Tutorial: if __name__ == '__main__'](https://www.youtube.com/watch?v=sugvnHA7ElY)
+
+-[6. Módulos — documentación de Python - 3.14.4](https://docs.python.org/es/3/tutorial/modules.html)
+
 ## Reto 5: 
 1. Create a package with all code of class *Shape*, this exersice should be conducted in two ways:
  - A unique module inside of package *Shape*
